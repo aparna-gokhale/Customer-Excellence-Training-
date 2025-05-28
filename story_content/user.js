@@ -2,61 +2,61 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6dFn1i1gU9d":
+      case "5eD8ZEMseZH":
         Script1();
         break;
-      case "6MG4OD0XSIy":
+      case "6E9l6J9Uqoj":
         Script2();
         break;
-      case "6JTmXSzeFLP":
+      case "6Evsg25EwqD":
         Script3();
         break;
-      case "6WGQx7XbG7P":
+      case "6C2fD0XKPsV":
         Script4();
         break;
-      case "6fiWA4NXGwK":
+      case "6YUWHb1MKyN":
         Script5();
         break;
-      case "5oDvbzeJxmi":
+      case "66iK7BW8fzE":
         Script6();
         break;
-      case "6l0kSZWjR2q":
+      case "6maZKON5vfp":
         Script7();
         break;
-      case "69AE5aNWCBp":
+      case "5qsSpShqjcH":
         Script8();
         break;
-      case "6J5cxwkJaK7":
+      case "5kIBChpSITT":
         Script9();
         break;
-      case "63JQdVX1lqw":
+      case "678Z4K53um9":
         Script10();
         break;
-      case "5XCKJ4PWQbe":
+      case "5ZLuyYG4txo":
         Script11();
         break;
-      case "6BG6sDOopD8":
+      case "5iaqB8WS5cH":
         Script12();
         break;
-      case "63s9BeqBDvB":
+      case "63Sj4AkmGc4":
         Script13();
         break;
-      case "6iK5ApNEEDW":
+      case "5qfMNYyf6Iw":
         Script14();
         break;
-      case "6UVLVdyFwlA":
+      case "6oavGxkFCZa":
         Script15();
         break;
-      case "6Vc3xACk9Ob":
+      case "6Qjaiorn9yV":
         Script16();
         break;
-      case "6dxlIsLL4ds":
+      case "69wSju7f4kl":
         Script17();
         break;
-      case "62hSAQdQZ6d":
+      case "6JcCrigH6Vo":
         Script18();
         break;
-      case "5kYYHEJIPyC":
+      case "5n5dlVzbvOv":
         Script19();
         break;
   }
@@ -75,7 +75,7 @@ function Script2()
 {
   window.startTime = new Date();
 
-sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Customer Excellence training", "https://aparna-gokhale.github.io/cs xapi 7 may/");
+sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Customer Excellence training", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/");
 
 }
 
@@ -120,19 +120,19 @@ if (emailPattern.test(email.trim())) {
 
 function Script5()
 {
-  sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Scene-1", "https://aparna-gokhale.github.io/cs xapi 7 mayi/Scene1");
+  sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Scene-1", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/Scene1");
 
 }
 
 function Script6()
 {
-  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S1-Q1", "https://aparna-gokhale.github.io/cs xapi 7 may/S1-Q1");
+  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S1-Q1", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S1-Q1");
 
 }
 
 function Script7()
 {
-  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S1-Q1", "https://aparna-gokhale.github.io/cs xapi 7 may/S1-Q1", {
+  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S1-Q1", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S1-Q1", {
   success: true,
   score: {
     raw: 10,
@@ -165,25 +165,25 @@ setTimeout(function() {
 
 function Script9()
 {
-  sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Scene-2", "https://aparna-gokhale.github.io/cs xapi 7 may/Scene-2");
+  sendStatement("launched", "http://adlnet.gov/expapi/verbs/launched", "Scene-2", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/Scene-2");
 
 }
 
 function Script10()
 {
-  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q1", "https://aparna-gokhale.github.io/cs xapi 7 may/S2-Q1");
+  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q1", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S2-Q1");
 
 }
 
 function Script11()
 {
-  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q2", "https://aparna-gokhale.github.io/cs xapi 7 may/S2-Q2");
+  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q2", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S2-Q2");
 
 }
 
 function Script12()
 {
-  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S2-Q2", "https://aparna-gokhale.github.io/cs xapi 7 may/S2-Q2", {
+  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S2-Q2", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S2-Q2", {
   success: true,
   score: {
     raw: 10,
@@ -196,7 +196,7 @@ function Script12()
 
 function Script13()
 {
-  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S2-Q1", "https://aparna-gokhale.github.io/cs xapi 7 may/S2-Q1", {
+  sendStatement("answered", "http://adlnet.gov/expapi/verbs/answered", "S2-Q1", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S2-Q1", {
   success: true,
   score: {
     raw: 10,
@@ -216,7 +216,7 @@ sendStatement(
   "completed",
   "http://adlnet.gov/expapi/verbs/completed",
   "Customer Excellence training",
-  "https://aparna-gokhale.github.io/cs xapi 6 may/",
+  "https://aparna-gokhale.github.io/Customer-Excellence-Training-/",
   {
     success: true,
     extensions: {
@@ -297,7 +297,7 @@ player.SetVar("FeedbackResult", result);
 
 function Script17()
 {
-  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q3", "https://aparna-gokhale.github.io/cs xapi 7 may/S2-Q3");
+  sendStatement("attempted", "http://adlnet.gov/expapi/verbs/attempted", "S2-Q3", "https://aparna-gokhale.github.io/Customer-Excellence-Training-/S2-Q3");
 
 }
 

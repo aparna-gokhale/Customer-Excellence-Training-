@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certificate</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #certificate-container {
+      width: 1123px;
+      height: 794px;
+      background-image: url("certificatelevel1.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      font-family: 'Josefin Sans', sans-serif;
+      position: relative;
+    }
+
+    #name {
+      position: absolute;
+      top: 47.5%;
+      width: 100%;
+      text-align: center;
+      font-size: 45px;
+      font-family: 'Lobster', cursive;
+      color: #000000; /* matched with border color */
+    }
+
+    #date {
+      position: absolute;
+      top: 82.7%;
+      left: 65%;
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: #909965;
+    }
+  </style>
+</head>
+<body>
+  <div id="certificate-container">
+    <div id="name">Loading...</div>
+    <div id="date"></div>
+  </div>
+
+  <script>
+    window.renderCertificate = function(name) {
+      document.getElementById("name").innerText = name;
+      document.getElementById("date").innerText = new Date().toLocaleDateString('en-GB', {
+        day: '2-digit', month: 'long', year: 'numeric'
+      });
+
+      const element = document.getElementById("certificate-container");
+
+      html2pdf().set({
+        filename: `Certificatelevel1-${name}.pdf`,
+        html2canvas: { scale: 3 },
+        jsPDF: {
+          orientation: 'landscape',
+          unit: 'px',
+          format: [1123, 794]
+        },
+        pagebreak: { avoid: 'div' }
+      }).from(element).save();
+    };
+
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+
+  if (name) {
+    // Only call renderCertificate if name is present
+    window.onload = function () {
+      renderCertificate(name);
+    };
+  }
+  </script>
+</body>
+</html>

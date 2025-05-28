@@ -15,7 +15,7 @@
     #certificate-container {
       width: 1123px;
       height: 794px;
-      background-image: url("certificatelevel2.png");
+      background-image: url("certificatelevel2.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       font-family: 'Josefin Sans', sans-serif;
@@ -24,7 +24,7 @@
 
     #name {
       position: absolute;
-      top: 49%;
+      top: 47.5%;
       width: 100%;
       text-align: center;
       font-size: 45px;
@@ -34,9 +34,9 @@
 
     #date {
       position: absolute;
-      top: 85.2%;
-      left: 68%;
-      font-size: 19px;
+      top: 82.7%;
+      left: 65%;
+      font-size: 16px;
       font-family: 'Josefin Sans', sans-serif;
       color: #909965;
     }
@@ -58,7 +58,7 @@
       const element = document.getElementById("certificate-container");
 
       html2pdf().set({
-        filename: `Certificate level 2 - ${name}.pdf`,
+        filename: `Certificatelevel2-${name}.pdf`,
         html2canvas: { scale: 3 },
         jsPDF: {
           orientation: 'landscape',
@@ -69,10 +69,15 @@
       }).from(element).save();
     };
 
-    // Auto-run using name from URL
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get("name") || "Learner";
-    window.renderCertificate(name);
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+
+  if (name) {
+    // Only call renderCertificate if name is present
+    window.onload = function () {
+      renderCertificate(name);
+    };
+  }
   </script>
 </body>
 </html>
